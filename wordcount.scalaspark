@@ -1,0 +1,2 @@
+
+sc.textFile("file:///home/training/django_site.java").flatMap(x => x.split(" ")).map(x => (x,1)).reduceByKey(_+_).map(_.swap).sortByKey(false).map(_.swap).collect()
