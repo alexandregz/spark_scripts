@@ -1,2 +1,3 @@
 
 sc.wholeTextFiles("file:/home/training/training_materials/sparkdev/data/activations/*.xml").map{ case(filename, xml) => filename }.foreach(println)
+sc.wholeTextFiles("file:/home/training/training_materials/sparkdev/data/activations/*.xml").map(line => line._1).foreach(println)
