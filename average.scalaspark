@@ -1,4 +1,5 @@
 
+// spark-shell
 
 val inputrdd = sc.parallelize(Seq(("maths", 50), ("maths", 60), ("english", 65)))
 
