@@ -1,0 +1,4 @@
+
+val inputrdd = sc.parallelize(Seq(("maths", 50), ("maths", 60), ("english", 65)))
+
+inputrdd.groupByKey().mapValues(rating => rating.sum/rating.size.toFloat).coalesce(1).saveAsTextFile("file:/home/training/proba_average1.txt")
