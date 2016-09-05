@@ -1,0 +1,7 @@
+
+val jsonFile = sqlContext.jsonFile("file:/home/training/json/bla.json"
+//
+// {"name":"Pepe", "age":50}
+//
+
+jsonFile.groupBy("name").avg("age").toJavaRDD.repartition(1).saveAsTextFile("file:/home/training/proba_json_sql")
