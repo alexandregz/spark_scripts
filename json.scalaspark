@@ -1,7 +1,7 @@
 
 // from spark-shell
 
-val jsonFile = sqlContext.jsonFile("file:/home/training/json/bla.json"
+val jsonFile = sqlContext.jsonFile("file:/home/training/json/bla.json")
 //
 // {"name":"Pepe", "age":50}
 //
